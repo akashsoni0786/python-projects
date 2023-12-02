@@ -1,0 +1,13 @@
+import tkinter as tk
+root=tk.Tk()
+root.resizable(False,False)
+root.geometry("500x500")
+sighin=tk.Frame(root)
+sighin.pack(padx=100,pady=100, fill='x', expand=True)
+email_label = tk.Label(sighin, text="Email: ")
+email_label.pack(fill='x', expand=True)
+email=tk.Entry(sighin)
+email.pack(fill='both', expand=True)
+Chk=tk.Checkbutton(onvalue="agree" ,offvalue="disagree")
+Chk.pack(fill='x',expand=True)
+root.mainloop()
